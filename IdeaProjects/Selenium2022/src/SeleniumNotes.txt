@@ -6,4 +6,25 @@ Selenium is used for test automation. It's a framework
 
 WebElement: All the items you can right-click and inspect
 
+14. *How to change a WebElement's text or delete? With clear() method
+*How to change an input's text? With JavaScript's innerText method
+
+15.*How to get all the options in dropdown?
+    1. Use Select class and ID attribute.
+    2. There are options under Select class and they are witten with option tag. You can use it.
+    3. You can use both value attribute and text.
+            Driver.getDriver().get("hyyps://amazon.com");
+            WebElement dropdown = Driver.getDriver().findElement(By.id("searchDropdownBox"));
+
+            Select select = new Select(dropdown);
+            select.getOptions();//Helps you to get all options as a list
+            for (WebElement w : options)
+                        System.out.println(w.getText());
+
+   *How to get one of the options from the dropdown? Use Select class, and then use selectByIndex(), selectByVisibleText(),
+   or selectByValue options. To find the first element, you can use getFirstSelectedOption
+   *How to check if the options are in alphabetical order or not? After creating an object in Select class, create a
+   method which returns a boolean value. You can go through the options with for loop
+
+
 

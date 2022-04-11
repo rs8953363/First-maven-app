@@ -48,7 +48,7 @@ public class Driver {
 
         }
 //Implicit wait: waits 100 seconds before giving error
-        driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         return driver;
 
