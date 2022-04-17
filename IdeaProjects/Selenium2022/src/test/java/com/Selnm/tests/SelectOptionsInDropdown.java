@@ -25,7 +25,7 @@ public class SelectOptionsInDropdown {
         System.out.println(result);
     }
 
-    //compareTo() method: if equals-->0, previous --> -1, later --> 1
+    //compareTo() method compares to String: if equals-->0, previous --> -1, later --> 1
     public boolean isOrdered(List<WebElement> options) {
         boolean isOrdered = false;
 

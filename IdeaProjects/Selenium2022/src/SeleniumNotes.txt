@@ -25,6 +25,11 @@ WebElement: All the items you can right-click and inspect
    or selectByValue options. To find the first element, you can use getFirstSelectedOption
    *How to check if the options are in alphabetical order or not? After creating an object in Select class, create a
    method which returns a boolean value. You can go through the options with for loop
-
+16. What would you do if you click on a link and it opened on a new window?
+    I would use WindowsHandle as there is a code for each window. By using that code, I move between windows with the help
+    of switch method. Driver.getDriver().switchTo().window(pageHandleValue)
+17. How to check an alert in Selenium? If you cannot do a left or right click or anything on the page, then it's an alert
+    created by JavaScript. In this case, you need to switch to that alert and close it, otherwise you cannot do anything.
+    If you can do right-click and inspect, then it's created by HTML.
 
 
