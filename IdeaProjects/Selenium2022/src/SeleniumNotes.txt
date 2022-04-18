@@ -30,6 +30,13 @@ WebElement: All the items you can right-click and inspect
     of switch method. Driver.getDriver().switchTo().window(pageHandleValue)
 17. How to check an alert in Selenium? If you cannot do a left or right click or anything on the page, then it's an alert
     created by JavaScript. In this case, you need to switch to that alert and close it, otherwise you cannot do anything.
-    If you can do right-click and inspect, then it's created by HTML.
+    If you can do right-click and inspect, then it's created by HTML. You go to website, switch to alert, and either
+    accept, reject, or use sendKeys method to send an input. Driver.getDriver().switchTo().alert().accept();
+           //dismiss() --> rejects alert
+           //accept() -->accepts alert
+           // sendKeys() --> add text into input.
 
+18. How to prioritize tests in Test NG? According to alphabetical order or top to bottom. If you put the priorty and the
+priority is low, then that test runs first.
+19. How to test a color of a WebElement?
 
